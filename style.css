@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* ส่วนหัว */
+header {
+    background: linear-gradient(135deg, #7dafff, #9b6dff); /* ฟ้า-ม่วง */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    background-color: #b3d4ff; /* ฟ้าอ่อน */
+    color: #7dafff;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 50px;
+    margin: 0 auto 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* ส่วนเนื้อหา */
+section {
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+section h2 {
+    color: #7dafff;
+    margin-bottom: 15px;
+    border-left: 5px solid #9b6dff;
+    padding-left: 10px;
+}
+
+/* กล่องข้อมูล */
+.card {
+    background-color: #e6f0ff; /* ฟ้าอ่อน */
+    padding: 25px;
+    margin-bottom: 15px;
+
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    color: #7dafff;
+    margin-bottom: 5px;
+}
+
+/* ทักษะ */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    background-color: #7dafff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* รายการ */
+ul {
+    padding-left: 25px;
+}
+
+/* ช่องทางติดต่อ */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact a {
+    text-decoration: none;
+    background-color: #9b6dff; /* ม่วง */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.contact a:hover {
+    background-color: #7dafff; /* ฟ้า */
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Responsive สำหรับมือถือ */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    section {
+        margin: 25px auto;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact a {
+        text-align: center;
+    }
+}
